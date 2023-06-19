@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" 
+    Service="WcfServiceWithAutofacAndLog4Net.WCF.IService1, WcfServiceWithAutofacAndLog4Net.WCF"
+    Factory="Autofac.Integration.Wcf.AutofacServiceHostFactory, Autofac.Integration.Wcf" %>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceWithAutofacAndLog4Net.Transversal" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceWithAutofacAndLog4Net.Transversal" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Dto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Num1" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Num2" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dto" nillable="true" type="tns:Dto" />
+</xs:schema>
