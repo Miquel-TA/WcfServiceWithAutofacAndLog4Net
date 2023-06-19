@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceWithAutofacAndLog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceWithAutofacAndLog4Net.Infrastructure", "..\WcfServiceWithAutofacAndLog4Net.Infrastructure\WcfServiceWithAutofacAndLog4Net.Infrastructure.csproj", "{31A7455D-B01B-4F4C-90FE-708870E6674B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{22D77C4A-0454-438A-93EA-85F532A2B2B6}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
