@@ -1,0 +1,1 @@
+# WcfServiceWithAutofacAndLog4Net
