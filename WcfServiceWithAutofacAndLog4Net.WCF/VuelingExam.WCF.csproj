@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WcfServiceWithAutofacAndLog4Net.WCF</RootNamespace>
-    <AssemblyName>WcfServiceWithAutofacAndLog4Net.WCF</AssemblyName>
+    <RootNamespace>VuelingExam.WCF</RootNamespace>
+    <AssemblyName>VuelingExam.WCF</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -94,24 +94,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Service1.svc" />
+    <Content Include="VuelingWcfService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configs\AutofacConfig.cs" />
+    <Compile Include="Configs\GlobalErrorBehaviorAttribute.cs" />
+    <Compile Include="Configs\GlobalErrorHandler.cs" />
     <Compile Include="Configs\Log4NetConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
+    <Compile Include="VuelingWcfService.svc.cs">
+      <DependentUpon>VuelingWcfService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IService1.cs" />
+    <Compile Include="IVuelingWcfService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -122,9 +122,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WcfServiceWithAutofacAndLog4Net.BusinessLogic\WcfServiceWithAutofacAndLog4Net.BusinessLogic.csproj">
+    <ProjectReference Include="..\VuelingExam.Transversal\VuelingExam.Transversal.csproj">
+      <Project>{74fd244b-fde8-482b-b3b5-f0ac2bf5da44}</Project>
+      <Name>VuelingExam.Transversal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfServiceWithAutofacAndLog4Net.BusinessLogic\VuelingExam.BusinessLogic.csproj">
       <Project>{4c96652f-5e9b-41c7-a19e-20cf1acd65f0}</Project>
-      <Name>WcfServiceWithAutofacAndLog4Net.BusinessLogic</Name>
+      <Name>VuelingExam.BusinessLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using VuelingExam.Transversal.Models;
 
-namespace WcfServiceWithAutofacAndLog4Net.Infrastructure
+namespace VuelingExam.Infrastructure
 {
     public interface IRepo
     {
-        string ReadData();
-        string WriteData(string data);
+        List<StudentDto> ReadData();
+        string WriteData(StudentDto data);
     }
 }
