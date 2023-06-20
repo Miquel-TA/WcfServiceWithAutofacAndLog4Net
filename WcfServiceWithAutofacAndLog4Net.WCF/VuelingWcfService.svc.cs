@@ -24,12 +24,10 @@ namespace VuelingExam.WCF
             if (student == null) throw new ArgumentNullException("Student is NULL");
             if (student.Values == null || student.Name == null || student.Surname == null) throw new ArgumentNullException("One ore more of the student values is NULL.");
 
-            log.Fatal("The cpu has died");
             return bl.WriteData(student);
         }
         public List<StudentDto> ReadData()
         {
-            log.Info("The cpu has revived");
             return bl.ReadData();
         }
 
