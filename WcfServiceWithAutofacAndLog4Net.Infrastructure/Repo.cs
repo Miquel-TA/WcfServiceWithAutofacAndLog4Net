@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System;
-using VuelingExam.Infrastructure;
 using VuelingExam.Transversal.Models;
 using System.Text.Json;
 using System.Collections.Generic;
