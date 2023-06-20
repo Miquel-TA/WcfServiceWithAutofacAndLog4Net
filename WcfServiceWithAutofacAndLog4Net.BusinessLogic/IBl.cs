@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using VuelingExam.Transversal.Models;
 
-namespace WcfServiceWithAutofacAndLog4Net.BusinessLogic
+namespace VuelingExam.BusinessLogic
 {
     public interface IBl
     {
-        string ReadData();
-        string WriteData(string data);
+        List<StudentDto> ReadData();
+        string WriteData(StudentDto student);
     }
 }

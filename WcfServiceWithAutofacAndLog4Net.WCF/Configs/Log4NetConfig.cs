@@ -5,7 +5,7 @@ using log4net.Layout;
 using log4net.Repository.Hierarchy;
 using System.Reflection;
 
-namespace WcfServiceWithAutofacAndLog4Net.WCF.Configs
+namespace VuelingExam.WCF.Configs
 {
     public class Log4NetModule : Autofac.Module
     {
@@ -24,7 +24,7 @@ namespace WcfServiceWithAutofacAndLog4Net.WCF.Configs
 
             PatternLayout patternLayout = new PatternLayout();
             // The location (%l) is pretty expensive at the cost of indicating the method, line and more.
-            patternLayout.ConversionPattern = "Date: %date Severity: %-5level Thread: %thread\n > User: %u %w\n > Location: %l\n > Message: %message%newline\n\n";
+            patternLayout.ConversionPattern = "Date: %date Severity: %-5level Thread: %thread\n > User: %u %w\n > Message: %message%newline\n\n";
             patternLayout.ActivateOptions();
 
 

@@ -1,8 +1,10 @@
 ﻿using log4net;
 using System;
-using WcfServiceWithAutofacAndLog4Net.Infrastructure;
+using System.Collections.Generic;
+using VuelingExam.Infrastructure;
+using VuelingExam.Transversal.Models;
 
-namespace WcfServiceWithAutofacAndLog4Net.BusinessLogic
+namespace VuelingExam.BusinessLogic
 {
     public class Bl : IBl
     {
@@ -15,13 +17,16 @@ namespace WcfServiceWithAutofacAndLog4Net.BusinessLogic
             _log = log;
         }
 
-        public string ReadData()
+        public List<StudentDto> ReadData()
         {
             return _repository.ReadData();
         }
-        public string WriteData(string text)
+        public string WriteData(StudentDto student)
         {
-            return _repository.WriteData(text);
+            if (student == null) throw new ArgumentNullException();
+            if (student.Values == null || student.Name == null || student.Surname == null) throw new ArgumentNullException();
+
+            return _repository.WriteData(student);
         }
     }
 }

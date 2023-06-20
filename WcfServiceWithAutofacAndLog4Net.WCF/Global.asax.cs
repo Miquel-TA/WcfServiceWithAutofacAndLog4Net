@@ -2,9 +2,9 @@
 
 using log4net.Config;
 using System;
-using WcfServiceWithAutofacAndLog4Net.WCF.Configs;
+using VuelingExam.WCF.Configs;
 
-namespace WcfServiceWithAutofacAndLog4Net.WCF
+namespace VuelingExam.WCF
 {
     public class Global : System.Web.HttpApplication
     {

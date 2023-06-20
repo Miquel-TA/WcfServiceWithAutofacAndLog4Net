@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using System;
-using WcfServiceWithAutofacAndLog4Net.BusinessLogic;
+using VuelingExam.BusinessLogic;
 
-namespace WcfServiceWithAutofacAndLog4Net.WCF.Configs
+namespace VuelingExam.WCF.Configs
 {
     public static class AutofacConfig
     {
@@ -11,9 +11,9 @@ namespace WcfServiceWithAutofacAndLog4Net.WCF.Configs
             var builder = new ContainerBuilder();
 
             builder.RegisterModule(new Log4NetModule());
-            builder.RegisterType<Service1>().As<IService1>().InstancePerDependency();
+            builder.RegisterType<VuelingWcfService>().As<IVuelingWcfService>().InstancePerDependency();
             builder.RegisterType<Bl>().As<IBl>().InstancePerDependency();
-            builder.RegisterModule(new AutofacRepoConfig());
+            builder.RegisterModule(new AutofacConfigRepoInclusion());
 
             return builder.Build();
         }

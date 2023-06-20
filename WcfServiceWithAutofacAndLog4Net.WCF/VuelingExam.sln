@@ -3,16 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceWithAutofacAndLog4Net.WCF", "WcfServiceWithAutofacAndLog4Net.WCF.csproj", "{56F82E3F-C664-4ED9-A171-D5039E76F03F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.WCF", "VuelingExam.WCF.csproj", "{56F82E3F-C664-4ED9-A171-D5039E76F03F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceWithAutofacAndLog4Net.BusinessLogic", "..\WcfServiceWithAutofacAndLog4Net.BusinessLogic\WcfServiceWithAutofacAndLog4Net.BusinessLogic.csproj", "{4C96652F-5E9B-41C7-A19E-20CF1ACD65F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.BusinessLogic", "..\WcfServiceWithAutofacAndLog4Net.BusinessLogic\VuelingExam.BusinessLogic.csproj", "{4C96652F-5E9B-41C7-A19E-20CF1ACD65F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceWithAutofacAndLog4Net.Infrastructure", "..\WcfServiceWithAutofacAndLog4Net.Infrastructure\WcfServiceWithAutofacAndLog4Net.Infrastructure.csproj", "{31A7455D-B01B-4F4C-90FE-708870E6674B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Infrastructure", "..\WcfServiceWithAutofacAndLog4Net.Infrastructure\VuelingExam.Infrastructure.csproj", "{31A7455D-B01B-4F4C-90FE-708870E6674B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{22D77C4A-0454-438A-93EA-85F532A2B2B6}"
-	ProjectSection(SolutionItems) = preProject
-		..\.gitignore = ..\.gitignore
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Infrastructure.Tests", "..\VuelingExam.InfrastructureTests\VuelingExam.Infrastructure.Tests.csproj", "{8504A8B9-5BB7-4D21-A696-46B98F170337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuelingExam.Transversal", "..\VuelingExam.Transversal\VuelingExam.Transversal.csproj", "{74FD244B-FDE8-482B-B3B5-F0AC2BF5DA44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +31,14 @@ Global
 		{31A7455D-B01B-4F4C-90FE-708870E6674B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31A7455D-B01B-4F4C-90FE-708870E6674B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31A7455D-B01B-4F4C-90FE-708870E6674B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8504A8B9-5BB7-4D21-A696-46B98F170337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8504A8B9-5BB7-4D21-A696-46B98F170337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8504A8B9-5BB7-4D21-A696-46B98F170337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8504A8B9-5BB7-4D21-A696-46B98F170337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FD244B-FDE8-482B-B3B5-F0AC2BF5DA44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FD244B-FDE8-482B-B3B5-F0AC2BF5DA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FD244B-FDE8-482B-B3B5-F0AC2BF5DA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FD244B-FDE8-482B-B3B5-F0AC2BF5DA44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
