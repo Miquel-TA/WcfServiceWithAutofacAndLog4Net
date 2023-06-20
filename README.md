@@ -13,7 +13,7 @@ This .NET Framework 4.8 project is an implementation of a RESTful Windows Commun
 
 ## Detailed Info
 
-~ Configuration and wiring of all components is done using the Autofac registrations in the `AutofacConfig` class, but also uses custom Modules like `Log4NetConfig.cs` and `AutofacConfigRepoInclusion.cs` for integrating Infrastructure layer (repo class) and Log4Net into Autofac.
+~ Configuration and wiring of all components is done using the Autofac registrations in the `AutofacConfig` class, it also uses custom Modules like `Log4NetConfig.cs` and `AutofacConfigRepoInclusion.cs` for accessing Infrastructure layer (repo class) and integrating Log4Net into Autofac.
 
 ~ `StudentDto` class represents the student data that will be processed by the service. It includes properties for the student's name, surname, and a list of values.
 
